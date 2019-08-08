@@ -1,17 +1,19 @@
+/* Home page */
 const grid = document.getElementById('grid');
 const thumbnails = document.getElementById('thumbnails');
 const nextPage = document.getElementById('next_page');
-
+/* User data in popup card*/
 const username = document.getElementById('username');
 const name = document.getElementById('name');
 const age = document.getElementById('age');
 const email = document.getElementById('email');
-const largeImage = document.getElementById('large-image');
-
+const largeImage = document.getElementById('large_image');
+/* Popup card */
 const visible = document.getElementById('details');
-const closeContainer = document.getElementById('close-container');
+const closeContainer = document.getElementById('close_container');
 const stopScrolling = document.getElementById('body');
-const closeFromOutside = document.getElementById('close-outside');
+const closeFromOutside = document.getElementById('close_outside');
+
 
 const getAllProfiles = (url) => {
     fetch(url)
