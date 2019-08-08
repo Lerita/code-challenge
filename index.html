@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 
-<body id="body">
+<body id="body" onload="toLoad()">
 
 <!----------------------------------------------------------------------------------------
                                     HOME
 ------------------------------------------------------------------------------------------->
-    <main id="thumbnails">
+    <main>
         <div class="title">
             <h2>intive Code Challenge</h2>
         </div>
+        <div id="loader"></div>
         <div class="grid-container" id="grid">
             <div class="grid-item">
                 <img src="" />
@@ -28,7 +29,7 @@
                 <p>country</p>
             </div>
         </div>
-        <ul class="pages">
+        <ul class="pages" id="pages">
             <li>Pages</li>
             <li class="page-number selected" id="page_1">1</li>
             <li class="page-number" id="page_2">2</li>

@@ -1,4 +1,28 @@
 /********************************************************************
+                                LOADER 
+ *********************************************************************/
+#loader {
+    border: 12px solid #ffffff;
+    border-radius: 50%;
+    border-top: 12px solid #007ac9;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+ /********************************************************************
                                 HOME 
  *********************************************************************/
 body {
@@ -31,7 +55,7 @@ main {
 
 .grid-container {
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -74,7 +98,7 @@ h4 {
 
 .pages {
     width: 180px;
-    display: flex;
+    display: none;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;

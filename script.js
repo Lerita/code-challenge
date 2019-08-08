@@ -1,7 +1,7 @@
 /* Home page */
 const grid = document.getElementById('grid');
-const thumbnails = document.getElementById('thumbnails');
-const nextPage = document.getElementById('next_page');
+const pages = document.getElementById('pages');
+const loader = document.getElementById("loader");
 /* User data in popup card*/
 const username = document.getElementById('username');
 const name = document.getElementById('name');
@@ -14,6 +14,21 @@ const closeContainer = document.getElementById('close_container');
 const stopScrolling = document.getElementById('body');
 const closeFromOutside = document.getElementById('close_outside');
 
+/* LOADER */
+let time;
+
+const toLoad = () => {
+    time = setTimeout(displayPage, 1000);
+}
+
+const displayPage = () => {
+    loader.style.display = "none";
+    grid.style.display = "flex";
+    pages.style.display = "flex";
+}
+
+
+/* Page functions */
 
 const getAllProfiles = (url) => {
     fetch(url)
