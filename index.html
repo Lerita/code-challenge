@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Challenge</title>
+    <title>intive Code Challenge</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 
 <body id="body">
+
     <main id="thumbnails">
         <div class="title">
-            <h2>Code Challenge</h2>
+            <h2>intive Code Challenge</h2>
         </div>
         <div class="grid-container" id="grid">
             <div class="grid-item">
@@ -22,32 +25,23 @@
                 <p>country</p>
             </div>
         </div>
-        <div class="button-container">
-            <button type="button" class="hidden load-more" id="load-more">Load more</button>
-        </div>
+            <ul class="pages">
+                <li>Pages</li>
+                <li class="page-number selected" id="page_1">1</li>
+                <li class="page-number" id="page_2">2</li>
+                <li class="page-number" id="page_3">3</li>
+                <li class="page-number" id="page_4">4</li>
+                <li class="page-number" id="page_5">5</li>
+            </ul>
     </main>
-    <!-- 
-    <section id="master" class="master-list">
-        <div class="list-item">
-            <img src="" />
-            <div class="list-info">
-                <h4></h4>
-                <p>city</p>
-                <p>country</p>
-            </div>
-        </div>
-    </section> -->
-
-
 
     <!----------------------------------------------------------------------------------------
                                                      DETAILS
-        ------------------------------------------------------------------------------------------->
+    ------------------------------------------------------------------------------------------->
+
     <section id="details" class="details-body">
         <div class="close-from-outside" id="close-outside"></div>
             <div class="details-container">
-                <!-- <div class="large-image-container" id="large-image">
-                </div> -->
                 <img id="large-image" src="">
                 <div class="user-info">
                     <p id="username"></p>
@@ -55,7 +49,7 @@
                     <p id="age"></p>
                     <p id="email"></p>
                 </div>
-                <div class="close-details-container" id="close-container">X</div>
+                <i class="fas fa-times" id="close-container"></i>
             </div>
     </section>
 
