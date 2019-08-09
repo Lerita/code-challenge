@@ -71,15 +71,18 @@ main {
     font-size: 12px;
     border-radius: 10px;
     background-color: #3a90caa4;
-    box-shadow: 1px 2px 20px 1px;
+    box-shadow: 0px 1px 5px 0px;
     font-family: 'Merriweather Sans', sans-serif;
     transition: all .1s;
 }
 
 .grid-item:hover {
-    width: 125px;
-    height: 155px;
+    box-shadow: 1px 2px 20px 1px;
     background-color: #3a90ca;
+}
+
+.grid-item:hover h4 {
+    color: #344e00;
 }
 
 img {
@@ -89,7 +92,7 @@ img {
 }
 
 .grid-item img:hover {
-    border: 2px solid #741c45;
+    border: 2px solid #7ab800;
     cursor: pointer;
 }
 
@@ -100,7 +103,7 @@ img {
 
 h4 {
     margin: 5px;
-    color: #741c45;
+    color: #7ab800;
 }
 
 .pages {
@@ -113,7 +116,6 @@ h4 {
     transition: color .4s;
     padding: 0;
     margin-top: 50px;
-    overflow: hidden;
 }
 
 .page-number {
@@ -123,6 +125,8 @@ h4 {
     border: 2px solid #ffffff;
     border-radius: 5px;
     margin-left: 10px;
+    position: relative;
+    top: 0;
     transition: all .4s ease-in-out;
 }
 
@@ -131,6 +135,7 @@ h4 {
     color: #ee599f;
     border: 2px solid #ee599f;
     background-color: #fff;
+    top: -5px;
 }
 
 .selected {
